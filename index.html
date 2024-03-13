@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCCI</title>
     <link rel="icon" type="image/x-icon" href="LOGO.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar navbar-small">
         <div class="logo">
             <img src="LOGO.jpg">
             <div class="nav-intro">
@@ -37,7 +39,7 @@
             <h1>
                 Best Learning<br />
                 <span class="heading__1">Education Academy</span><br />
-                <span class="heading__2">in The Asansol</span>
+                <span class="heading__2"></span>
             </h1>
             <h4>
                 Unlock your full learning potential with our computer education
@@ -46,7 +48,7 @@
                 computer classrooms, and intelligent feedback.
             </h4>
 
-           
+
         </div>
         <div class="image__container">
             <img src="header-1.jpg" alt="header" />
@@ -154,7 +156,7 @@
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>Social Links</span>
-                
+
             </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com/academyinasansol/"><i class="fa-brands fa-facebook"></i></a>
@@ -166,7 +168,16 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+    <script>
+        var typed = new Typed(".heading__2", {
+            strings: ["In The Asansol"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>
