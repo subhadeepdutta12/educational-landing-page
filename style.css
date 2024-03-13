@@ -3,13 +3,14 @@
     padding: 0;
 }
 
-html{
+
+html {
     box-sizing: border-box;
     font-size: 100%
 }
 
 body {
-    
+
     background-image: linear-gradient(135deg, rgba(159, 159, 159, 0.46) 0%, rgba(159, 159, 159, 0.46) 14.286%, rgba(165, 165, 165, 0.46) 14.286%, rgba(165, 165, 165, 0.46) 28.572%, rgba(171, 171, 171, 0.46) 28.572%, rgba(171, 171, 171, 0.46) 42.858%, rgba(178, 178, 178, 0.46) 42.858%, rgba(178, 178, 178, 0.46) 57.144%, rgba(184, 184, 184, 0.46) 57.144%, rgba(184, 184, 184, 0.46) 71.43%, rgba(190, 190, 190, 0.46) 71.43%, rgba(190, 190, 190, 0.46) 85.716%, rgba(196, 196, 196, 0.46) 85.716%, rgba(196, 196, 196, 0.46) 100.002%), linear-gradient(45deg, rgb(252, 252, 252) 0%, rgb(252, 252, 252) 14.286%, rgb(246, 246, 246) 14.286%, rgb(246, 246, 246) 28.572%, rgb(241, 241, 241) 28.572%, rgb(241, 241, 241) 42.858%, rgb(235, 235, 235) 42.858%, rgb(235, 235, 235) 57.144%, rgb(229, 229, 229) 57.144%, rgb(229, 229, 229) 71.43%, rgb(224, 224, 224) 71.43%, rgb(224, 224, 224) 85.716%, rgb(218, 218, 218) 85.716%, rgb(218, 218, 218) 100.002%);
 }
 
@@ -52,7 +53,7 @@ body {
 .nav-links ul {
     list-style-type: none;
     display: flex;
-   
+
 }
 
 .nav-links li {
@@ -60,8 +61,14 @@ body {
 }
 
 .nav-links li a {
-    color: #5c48ee;
+    color: #333;
     text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #5c48ee;
+
+    text-decoration: underline;
 }
 
 
@@ -103,7 +110,7 @@ body {
     font-size: 1rem;
     color: #333333;
     margin-bottom: 2rem;
-    text-align:justify;
+    text-align: justify;
     text-transform: capitalize;
 }
 
@@ -160,14 +167,14 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-   
+
     text-align: center;
     padding: 20px 0;
 }
 
 
 .courses-section {
-   
+
     margin: 0 auto;
     padding: 30px 20px;
     display: flex;
@@ -184,12 +191,16 @@ body {
     margin: 10px;
     margin-bottom: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: 1s;
     overflow: hidden;
+    border-radius: 20px;
 }
-.course-card img{
+
+
+
+.course-card img {
     width: 100%;
     height: 200px;
+    border-radius: 10px;
 }
 
 .course-title {
@@ -198,7 +209,7 @@ body {
     color: #333;
     margin-bottom: 10px;
     padding-top: 15px;
-    
+
 }
 
 
@@ -206,7 +217,7 @@ body {
     font-size: 16px;
     color: #666;
     line-height: 1.6;
-    
+
     margin-bottom: 15px;
     text-align: justify;
     text-transform: capitalize;
@@ -221,7 +232,7 @@ body {
 
 
 
-.container{
+.container {
     display: flex;
 }
 
@@ -236,6 +247,7 @@ footer {
     footer {
         position: static;
     }
+
     header {
         padding-top: 40px;
     }
@@ -249,13 +261,15 @@ footer {
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
     margin-top: 80px;
-    
+
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
-    
+
 }
 
 /* Footer left */
@@ -303,7 +317,7 @@ footer {
 .footer-distributed .footer-center i {
     background-color: #33383b;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 17px;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -335,14 +349,14 @@ footer {
 .footer-distributed .footer-center p a {
     color: #333;
     text-decoration: none;
-    ;
+
 }
 
 /* Footer Right */
 
 .footer-distributed .footer-right {
     width: 30%;
-   padding-left: 40px;
+    padding-left: 40px;
 }
 
 .footer-distributed .footer-company-about {
@@ -371,7 +385,7 @@ footer {
     height: 35px;
     cursor: pointer;
     background-color: #33383b;
-    border-radius: 2px;
+    border-radius: 20px;
     font-size: 20px;
     color: #ffffff;
     text-align: center;
@@ -386,16 +400,48 @@ footer {
 
 .footer-links a:hover {
     color: #5c48ee;
+    text-decoration: underline;
 }
 
 @media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
     }
+
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}       
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+
+    .course-title, .course-description, .course-price {
+        font-size: 10px;
+    }
+
+    .image__container{
+        width:auto;
+    }
+    .about-heading, .about-content{
+        font-size: 10px;
+    }
+    .about-content{
+        text-align: justify;
+    }
+    .course-card{
+        flex-direction: column;
+    }
+}
