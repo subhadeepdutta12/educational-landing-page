@@ -410,10 +410,6 @@ footer {
     .footer-distributed .footer-center,
     .footer-distributed .footer-right {
         display: block;
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transform: none;
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
